@@ -31,3 +31,8 @@ print("   ")
 boardingTime = dateTimeOffObj - timedelta(minutes = 30)
 officalBoardingTime = boardingTime.strftime("%H:%M")
 print("The boarding time is " + officalBoardingTime)
+
+
+airportTime = dateTimeOffObj - timedelta(hours = 2, minutes = 30)
+officalAirportTime = airportTime.strftime("%H:%M")
+print("You need to get to the airport at " + officalAirportTime)
