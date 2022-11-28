@@ -27,4 +27,7 @@ officialTimeOff = dateTimeOffObj.time()
 print(officialTimeOff)
 print("   ")
 
-# getting to airport time TO DO
+
+boardingTime = dateTimeOffObj - timedelta(minutes = 30)
+officalBoardingTime = boardingTime.strftime("%H:%M")
+print("The boarding time is " + officalBoardingTime)
